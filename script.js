@@ -299,6 +299,15 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const lang = btn.getAttribute('data-lang');
         changeLanguage(lang);
+        
+        // Close mobile menu if open
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            const spans = navToggle.querySelectorAll('span');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        }
     });
 });
 
