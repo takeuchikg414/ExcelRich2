@@ -8,7 +8,7 @@
     --color-primary-dark: #ff80cd;   /* Deep Pink */
     --color-secondary: #FFFFFF;      /* White */
     --color-bg-dark: #262c5b;        /* Navy Blue */
-    --color-bg-darker: #1a1f3f;      /* Darker Navy */
+    --color-bg-darker: #262c5b;      /* Navy Blue (unified) */
     --color-text-primary: #FFFFFF;
     --color-text-secondary: #E0E0E0;
     --color-text-muted: #A0A0A0;
@@ -16,7 +16,7 @@
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #ff99d8 0%, #ffb3e3 100%);
-    --gradient-dark: linear-gradient(180deg, #262c5b 0%, #1a1f3f 100%);
+    --gradient-dark: linear-gradient(180deg, #262c5b 0%, #262c5b 100%);
     --gradient-glow: radial-gradient(circle at center, rgba(255, 153, 216, 0.2) 0%, transparent 70%);
     
     /* Typography */
@@ -147,7 +147,7 @@ p {
 }
 
 .nav.scrolled {
-    background: rgba(26, 31, 63, 0.95);
+    background: rgba(38, 44, 91, 0.95);
     box-shadow: 0 4px 30px rgba(255, 153, 216, 0.15);
 }
 
@@ -283,7 +283,7 @@ p {
     background: 
         var(--gradient-glow),
         radial-gradient(ellipse at top, rgba(255, 153, 216, 0.15) 0%, transparent 50%),
-        linear-gradient(180deg, #1a1f3f 0%, #262c5b 100%);
+        #262c5b;
     z-index: 1;
 }
 
@@ -925,7 +925,7 @@ section {
    Footer
    ======================================== */
 .footer {
-    background: #1a1f3f;
+    background: #262c5b;
     border-top: 1px solid rgba(255, 153, 216, 0.2);
     padding: var(--spacing-xl) 0 var(--spacing-md);
     text-align: center;
@@ -1103,7 +1103,7 @@ section {
         top: 70px;
         left: 0;
         right: 0;
-        background: rgba(26, 31, 63, 0.98);
+        background: rgba(38, 44, 91, 0.98);
         flex-direction: column;
         gap: 0;
         padding: var(--spacing-md);
