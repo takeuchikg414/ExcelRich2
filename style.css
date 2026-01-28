@@ -1116,7 +1116,6 @@ section {
     
     .nav-link {
         padding: var(--spacing-sm) 0;
-        border-bottom: 1px solid #3d5166;
     }
     
     .nav-toggle {
